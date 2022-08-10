@@ -1,0 +1,22 @@
+{
+	"providers":
+		[
+			{
+				"type":"bitmap",
+				"file":"along:font/celular.png",
+				"ascent":134,
+				"height":256,
+				"chars":["\u3200"]
+			},
+			{
+				"type":"bitmap",
+				"file":"along:font/space.png",
+				"ascent":-32768,
+				"height":-5,
+				"chars":["\u3201"]
+			}
+		]
+	
+	
+	
+}
