@@ -18,10 +18,40 @@
 			{
 				"type":"bitmap",
 				"file":"along:font/nequi.png",
-				"ascent":-32768,
-				"height":-5,
+				"ascent":134,
+				"height":256,
 				"chars":["\u3202"]
+			},
+			{
+				"type":"bitmap",
+				"file":"along:font/melipag1.png",
+				"ascent":134,
+				"height":256,
+				"chars":["\u3203"]
+			},
+			{
+				"type":"bitmap",
+				"file":"along:font/melipag2.png",
+				"ascent":134,
+				"height":256,
+				"chars":["\u3204"]
+			},
+			{
+				"type":"bitmap",
+				"file":"along:font/melipag3.png",
+				"ascent":134,
+				"height":256,
+				"chars":["\u3205"]
+			},
+			{
+				"type":"bitmap",
+				"file":"along:font/melivender.png",
+				"ascent":134,
+				"height":256,
+				"chars":["\u3206"]
 			}
+			
+
 		]
 	
 	

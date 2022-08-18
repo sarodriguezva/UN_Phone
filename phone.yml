@@ -1,0 +1,593 @@
+panels:
+  celular:
+    perm: default
+    rows: 6
+    title: "\u3201\u3201&f\u3200"
+    commands:
+    - phone
+    open-with-item:
+      material: DIAMOND
+      name: 'Celular'
+      lore:
+      - 'Accede a tu teléfono celular'
+      stationary: 8
+      customdata: 2
+    item:
+      '3':
+        material: DIAMOND
+        stack: 1
+        name: '&c&lDeepWeb'
+        lore:
+        - '&f¿No quieres que te atrapen?, no hay problema, Con esta App'
+        - '&fpuedes comprar armas y drogas de forma totalmente anónima.'
+        customdata: 1
+      '5':
+        material: DIAMOND
+        stack: 1
+        name: '&9&lNequi'
+        lore:
+        - '&fGuarda, envía y retira dinero, organiza tus gastos.'
+        commands:
+        - open= nequi
+        customdata: 1
+      '12':
+        material: DIAMOND
+        stack: 1
+        name: '&3&lTwitter'
+        lore:
+        - '&f¡Ingresa a Twitter!, con esta app'
+        - '&fpuedes mandar mensajes globales dentro del rol.'
+        customdata: 1
+      '14':
+        material: DIAMOND
+        stack: 1
+        name: '&e&lMercadoLibre'
+        lore:
+        - '&fCompra productos con Envío Gratis.'
+        - '&fEncuentre miles de productos a precios increíbles.'
+        commands:
+        - open= MercadoLibreHomePage
+        customdata: 1
+      '21':
+        material: DIAMOND
+        stack: 1
+        name: '&a&lGoogle Maps'
+        lore:
+        - '&f¿No encuentras algún punto del mapa?, ubícate.'
+        customdata: 1
+      '23':
+        material: DIAMOND
+        stack: 1
+        name: '&6&lPropiedades'
+        lore:
+        - '&f¿Quieres ver tu casa?'
+        - '&fCon esta app podrás gestionar tus propiedades'
+        customdata: 1
+      '48':
+        material: DIAMOND
+        stack: 1
+        name: '&7&lAjustes'
+        lore:
+        - '&fConfigura aspectos del servidor para'
+        - '&fpara mejorar el rendimiento o tu experiencia'
+        customdata: 1
+      '49':
+        material: DIAMOND
+        stack: 1
+        name: '&f&lWikipedia'
+        lore:
+        - '&f¿No entiendes cómo hacer algo en el servidor?'
+        - '&fAquí te lo explicamos'
+        customdata: 1
+      '50':
+        material: DIAMOND
+        stack: 1
+        name: '&9&lDiscord'
+        lore:
+        - '&fIngresa al Discord oficial de Minecraft UN.'
+        customdata: 1
+
+
+
+  nequi:
+    perm: default
+    rows: 6
+    title: "Nequi"
+    item:
+      '39':
+        material: DIAMOND
+        stack: 1
+        name: 'Sacar Dinero'
+        lore:
+        - 'Sacar dinero para comprar a geis'
+        customdata: 1
+      '40':
+        material: DIAMOND
+        stack: 1
+        name: 'Guardar Dinero'
+        lore:
+        - 'Guardar dinero para comprar a geis más tarde'
+        customdata: 1
+
+      '41':
+        material: DIAMOND
+        stack: 1
+        name: 'Pasar Dinero'
+        lore:
+        - 'Pasar dinero para cuando termines de hacer delicioso con geis'
+        customdata: 1
+
+      '48':
+        material: DIAMOND
+        stack: 1
+        name: 'Atras'
+        lore:
+        - 'Devuelve a la página anterior'
+        customdata: 1
+      '14':
+        material: DIAMOND
+        stack: 1
+        name: 'Saldo'
+        lore:
+        - 'Dinero disponible para comprar geis'
+        customdata: 1
+
+  MercadoLibreHomePage:
+    perm: default
+    rows: 6
+    title: "\u3201\u3201&f\u3203"
+    item:
+      '12':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '13':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '14':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '21':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '22':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '23':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '30':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '31':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '32':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '39':
+        material: DIAMOND
+        stack: 1
+        name: '§c Venda su item'
+        lore:
+        - '§c Ingrese para publicar su item'
+        commands:
+        - open= MercadoLibreShop
+        customdata: 1
+      '40':
+        material: DIAMOND
+        stack: 1
+        name: '§c Venda su item'
+        lore:
+        - '§c Ingrese para publicar su item'
+        commands:
+        - open= MercadoLibreShop
+        customdata: 1
+      '41':
+        material: DIAMOND
+        stack: 1
+        name: '§c Venda su item'
+        lore:
+        - '§c Ingrese para publicar su item'
+        commands:
+        - open= MercadoLibreShop
+        customdata: 1
+      '49':
+        material: DIAMOND
+        stack: 1
+        name: 'Inicio'
+        lore:
+        - 'Click aca para volver a la pagina principal'
+        commands:
+        - open= MercadoLibreHomePage
+        customdata: 1
+      '50':
+        material: DIAMOND
+        stack: 1
+        name: 'Adelante'
+        lore:
+        - 'Click aca para ir a la siguiente pagina'
+        commands:
+        - open= MercadoLibrePage2
+        customdata: 1
+
+  MercadoLibrePage2:
+    perm: default
+    rows: 6
+    title: "\u3201\u3201&f\u3204"
+    item:
+      '12':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '13':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '14':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '21':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '22':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '23':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '30':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '31':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '32':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '39':
+        material: DIAMOND
+        stack: 1
+        name: '§c Venda su item'
+        lore:
+        - '§c Ingrese para publicar su item'
+        commands:
+        - open= MercadoLibreShop
+        customdata: 1
+      '40':
+        material: DIAMOND
+        stack: 1
+        name: '§c Venda su item'
+        lore:
+        - '§c Ingrese para publicar su item'
+        commands:
+        - open= MercadoLibreShop
+        customdata: 1
+      '41':
+        material: DIAMOND
+        stack: 1
+        name: '§c Venda su item'
+        lore:
+        - '§c Ingrese para publicar su item'
+        commands:
+        - open= MercadoLibreShop
+        customdata: 1
+      '48':
+        material: DIAMOND
+        stack: 1
+        name: '§e Página anterior'
+        lore:
+        - '§e Click aca para ir a la página anterior'
+        commands:
+        - open= MercadoLibreHomePage
+        customdata: 1
+      '49':
+        material: DIAMOND
+        stack: 1
+        name: '§e Inicio'
+        lore:
+        - '§e Click aca para volver a la pagina principal'
+        commands:
+        - open= MercadoLibreHomePage
+        customdata: 1
+      '50':
+        material: DIAMOND
+        stack: 1
+        name: 'Adelante'
+        lore:
+        - 'Click aca para ir a la siguiente pagina'
+        commands:
+        - open= MercadoLibrePage3
+        customdata: 1
+
+  MercadoLibrePage3:
+    perm: default
+    rows: 6
+    title: "\u3201\u3201&f\u3205"
+    item:
+      '12':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '13':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+          - '§a x item en venta por x player'
+        customdata: 1
+      '14':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '21':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '22':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '23':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '30':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '31':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '32':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '39':
+        material: DIAMOND
+        stack: 1
+        name: '§c Venda su item'
+        lore:
+        - '§c Ingrese para publicar su item'
+        commands:
+        - open= MercadoLibreShop
+        customdata: 1
+      '40':
+        material: DIAMOND
+        stack: 1
+        name: '§c Venda su item'
+        lore:
+        - '§c Ingrese para publicar su item'
+        commands:
+        - open= MercadoLibreShop
+        customdata: 1
+      '41':
+        material: DIAMOND
+        stack: 1
+        name: '§c Venda su item'
+        lore:
+        - '§c Ingrese para publicar su item'
+        commands:
+        - open= MercadoLibreShop
+        customdata: 1
+      '48':
+        material: DIAMOND
+        stack: 1
+        name: '§e Página anterior'
+        lore:
+        - '§e Click aca para ir a la página anterior'
+        commands:
+        - open= MercadoLibrePage2
+        customdata: 1
+      '49':
+        material: DIAMOND
+        stack: 1
+        name: '§e Inicio'
+        lore:
+        - '§e Click aca para volver a la pagina principal'
+        commands:
+        - open= MercadoLibreHomePage
+        customdata: 1
+
+  MercadoLibreSell:
+    perm: default
+    rows: 6
+    title: "\u3201\u3201&f\u3206"
+    item:
+      '3':
+        material: DIAMOND
+        stack: 1
+        name: '§a Carrito de Compras'
+        lore:
+        - 'Carrito de compras'
+        customdata: 1
+      '12':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '13':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '14':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '21':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '22':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '23':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '30':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '31':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '32':
+        material: DIAMOND
+        stack: 1
+        name: '§a Articulo en venta'
+        lore:
+        - '§a x item en venta por x player'
+        customdata: 1
+      '41':
+        material: DIAMOND
+        stack: 1
+        name: '§c Eliminar'
+        lore:
+        - '§c Click aca para eliminar su venta'
+        commands:
+        - open= MercadoLibreShop
+        customdata: 1
+      '48':
+        material: DIAMOND
+        stack: 1
+        name: '§e Página anterior'
+        lore:
+        - '§e Click aca para ir a la página anterior'
+        commands:
+        - open= MercadoLibreHomePage #comprobacion para saber a que pagina devolver.
+        customdata: 1
+      '49':
+        material: DIAMOND
+        stack: 1
+        name: '§e Inicio'
+        lore:
+        - '§e Click aca para volver a la pagina principal'
+        commands:
+        - open= MercadoLibreHomePage
+        customdata: 1
+
+
+      
+
+
+
