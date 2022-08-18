@@ -9,3 +9,5 @@ Notas para los programadores :
 - App Mercado libre Botón Inicio debe llevar al Menú del celular inicial, no a la anterior página
 - Actualizar App Mercado Libre ( Esperar a que esté en Drive )
 - Modificar Textos de App Nequi
+
+- (Nota para Brayan) Actualizar GUI celular con la ultima del drive que contiene la app del trabajo
