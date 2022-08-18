@@ -10,4 +10,4 @@ Notas para los programadores :
 - Actualizar App Mercado Libre ( Esperar a que esté en Drive )
 - Modificar Textos de App Nequi
 
-- (Nota para Brayan) Actualizar GUI celular con la ultima del drive que contiene la app del trabajo
+- (Nota para Brayan) Actualizar GUI celular con la ultima del drive que contiene la app del trabajo , el archivo tiene el nombre de Plantilla_Celular2
