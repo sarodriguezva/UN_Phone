@@ -79,6 +79,8 @@ panels:
         - '&f¿No entiendes cómo hacer algo en el servidor?'
         - '&fAquí te lo explicamos'
         customdata: 1
+        commands:
+        - open= wikipedia
       '50':
         material: DIAMOND
         stack: 1
@@ -586,8 +588,92 @@ panels:
         - open= MercadoLibreHomePage
         customdata: 1
 
-
-      
-
-
-
+  wikipedia:
+    perm: default
+    rows: 6
+    title: "\u3201\u3201&f\u3207"
+    commands:
+    - wiki
+    item:
+      '12':
+        material: DIAMOND
+        stack: 1
+        name: ''
+        customdata: 1
+        name: "&d&lItem"
+        lore:
+        - "&7Lorem ipsum dolor sit amet, "
+        - "&7consectetur adipiscing elit."
+      '13':
+        material: DIAMOND
+        stack: 1
+        name: ''
+        customdata: 1
+        name: "&c&lItem"
+        lore:
+        - "&7Lorem ipsum dolor sit amet, "
+        - "&7consectetur adipiscing elit."
+      '14':
+        material: DIAMOND
+        stack: 1
+        name: ''
+        customdata: 1
+        name: "&a&lItem"
+        lore:
+        - "&7Lorem ipsum dolor sit amet, "
+        - "&7consectetur adipiscing elit."
+      '21':
+        material: DIAMOND
+        stack: 1
+        name: ''
+        customdata: 1
+        name: "&7&lItem"
+        lore:
+        - "&7Lorem ipsum dolor sit amet, "
+        - "&7consectetur adipiscing elit."
+      '22':
+        material: DIAMOND
+        stack: 1
+        name: ''
+        customdata: 1
+        name: "&6&lItem"
+        lore:
+        - "&7Lorem ipsum dolor sit amet, "
+        - "&7consectetur adipiscing elit."
+      '23':
+        material: DIAMOND
+        stack: 1
+        name: ''
+        customdata: 1
+        name: "&9&lItem"
+        lore:
+        - "&7Lorem ipsum dolor sit amet, "
+        - "&7consectetur adipiscing elit."
+      '30':
+        material: DIAMOND
+        stack: 1
+        name: ''
+        customdata: 1
+        name: "&e&lItem"
+        lore:
+        - "&7Lorem ipsum dolor sit amet, "
+        - "&7consectetur adipiscing elit."
+      '31':
+        material: DIAMOND
+        stack: 1
+        name: ''
+        customdata: 1
+        name: "&5&lItem"
+        lore:
+        - "&7Lorem ipsum dolor sit amet, "
+        - "&7consectetur adipiscing elit."
+      '49':
+        material: DIAMOND
+        stack: 1
+        name: ''
+        customdata: 1
+        name: "&2&lHome"
+        lore:
+        - "&7Ir al menú principal del teléfono "
+        commands:
+        - "sudo= phone"

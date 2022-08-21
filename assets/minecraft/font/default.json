@@ -1,59 +1,76 @@
 {
-	"providers":
-		[
-			{
-				"type":"bitmap",
-				"file":"along:font/celular2.png",
-				"ascent":134,
-				"height":256,
-				"chars":["\u3200"]
-			},
-			{
-				"type":"bitmap",
-				"file":"along:font/space.png",
-				"ascent":-32768,
-				"height":-5,
-				"chars":["\u3201"]
-			},
-			{
-				"type":"bitmap",
-				"file":"along:font/nequi.png",
-				"ascent":134,
-				"height":256,
-				"chars":["\u3202"]
-			},
-			{
-				"type":"bitmap",
-				"file":"along:font/melipag1.png",
-				"ascent":134,
-				"height":256,
-				"chars":["\u3203"]
-			},
-			{
-				"type":"bitmap",
-				"file":"along:font/melipag2.png",
-				"ascent":134,
-				"height":256,
-				"chars":["\u3204"]
-			},
-			{
-				"type":"bitmap",
-				"file":"along:font/melipag3.png",
-				"ascent":134,
-				"height":256,
-				"chars":["\u3205"]
-			},
-			{
-				"type":"bitmap",
-				"file":"along:font/melivender.png",
-				"ascent":134,
-				"height":256,
-				"chars":["\u3206"]
-			}
-			
-
-		]
-	
-	
-	
+	"providers": [
+		{
+			"type": "bitmap",
+			"file": "along:font/celular2.png",
+			"ascent": 134,
+			"height": 256,
+			"chars": [
+				"\u3200"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "along:font/space.png",
+			"ascent": -32768,
+			"height": -5,
+			"chars": [
+				"\u3201"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "along:font/nequi.png",
+			"ascent": 134,
+			"height": 256,
+			"chars": [
+				"\u3202"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "along:font/melipag1.png",
+			"ascent": 134,
+			"height": 256,
+			"chars": [
+				"\u3203"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "along:font/melipag2.png",
+			"ascent": 134,
+			"height": 256,
+			"chars": [
+				"\u3204"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "along:font/melipag3.png",
+			"ascent": 134,
+			"height": 256,
+			"chars": [
+				"\u3205"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "along:font/melivender.png",
+			"ascent": 134,
+			"height": 256,
+			"chars": [
+				"\u3206"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "along:font/wiki.png",
+			"ascent": 134,
+			"height": 256,
+			"chars": [
+				"\u3207"
+			]
+		}
+	]
 }
