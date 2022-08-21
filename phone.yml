@@ -94,7 +94,7 @@ panels:
   nequi:
     perm: default
     rows: 6
-    title: "Nequi"
+    title: "\u3201\u3201&f\u3202"
     item:
       '39':
         material: DIAMOND
@@ -125,6 +125,8 @@ panels:
         name: 'Atras'
         lore:
         - 'Devuelve a la página anterior'
+        commands:
+        - open= celular
         customdata: 1
       '14':
         material: DIAMOND
@@ -209,7 +211,7 @@ panels:
         lore:
         - '§c Ingrese para publicar su item'
         commands:
-        - open= MercadoLibreShop
+        - open= MercadoLibreHomePage
         customdata: 1
       '40':
         material: DIAMOND
@@ -218,7 +220,7 @@ panels:
         lore:
         - '§c Ingrese para publicar su item'
         commands:
-        - open= MercadoLibreShop
+        - open= MercadoLibreSell
         customdata: 1
       '41':
         material: DIAMOND
@@ -227,7 +229,7 @@ panels:
         lore:
         - '§c Ingrese para publicar su item'
         commands:
-        - open= MercadoLibreShop
+        - open= MercadoLibreSell
         customdata: 1
       '49':
         material: DIAMOND
@@ -236,7 +238,7 @@ panels:
         lore:
         - 'Click aca para volver a la pagina principal'
         commands:
-        - open= MercadoLibreHomePage
+        - open= celular
         customdata: 1
       '50':
         material: DIAMOND
@@ -323,7 +325,7 @@ panels:
         lore:
         - '§c Ingrese para publicar su item'
         commands:
-        - open= MercadoLibreShop
+        - open= MercadoLibreSell
         customdata: 1
       '40':
         material: DIAMOND
@@ -332,7 +334,7 @@ panels:
         lore:
         - '§c Ingrese para publicar su item'
         commands:
-        - open= MercadoLibreShop
+        - open= MercadoLibreSell
         customdata: 1
       '41':
         material: DIAMOND
@@ -341,7 +343,7 @@ panels:
         lore:
         - '§c Ingrese para publicar su item'
         commands:
-        - open= MercadoLibreShop
+        - open= MercadoLibreSell
         customdata: 1
       '48':
         material: DIAMOND
@@ -359,7 +361,7 @@ panels:
         lore:
         - '§e Click aca para volver a la pagina principal'
         commands:
-        - open= MercadoLibreHomePage
+        - open= celular
         customdata: 1
       '50':
         material: DIAMOND
@@ -446,7 +448,7 @@ panels:
         lore:
         - '§c Ingrese para publicar su item'
         commands:
-        - open= MercadoLibreShop
+        - open= MercadoLibreSell
         customdata: 1
       '40':
         material: DIAMOND
@@ -455,7 +457,7 @@ panels:
         lore:
         - '§c Ingrese para publicar su item'
         commands:
-        - open= MercadoLibreShop
+        - open= MercadoLibreSell
         customdata: 1
       '41':
         material: DIAMOND
@@ -464,7 +466,7 @@ panels:
         lore:
         - '§c Ingrese para publicar su item'
         commands:
-        - open= MercadoLibreShop
+        - open= MercadoLibreSell
         customdata: 1
       '48':
         material: DIAMOND
@@ -482,7 +484,7 @@ panels:
         lore:
         - '§e Click aca para volver a la pagina principal'
         commands:
-        - open= MercadoLibreHomePage
+        - open= celular
         customdata: 1
 
   MercadoLibreSell:
@@ -567,7 +569,7 @@ panels:
         lore:
         - '§c Click aca para eliminar su venta'
         commands:
-        - open= MercadoLibreShop
+        - open= MercadoLibreSell
         customdata: 1
       '48':
         material: DIAMOND
@@ -585,7 +587,7 @@ panels:
         lore:
         - '§e Click aca para volver a la pagina principal'
         commands:
-        - open= MercadoLibreHomePage
+        - open= celular
         customdata: 1
 
   wikipedia:
