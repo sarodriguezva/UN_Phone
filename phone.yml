@@ -63,6 +63,13 @@ panels:
         - '&f¿Quieres ver tu casa?'
         - '&fCon esta app podrás gestionar tus propiedades'
         customdata: 1
+      '30':
+        material: DIAMOND
+        stack: 1
+        name: '&5&lTrabajos'
+        lore:
+        - '&fBusca y gestiona tus empleos'
+        customdata: 1
       '48':
         material: DIAMOND
         stack: 1
@@ -88,6 +95,9 @@ panels:
         lore:
         - '&fIngresa al Discord oficial de Minecraft UN.'
         customdata: 1
+        commands:
+        - "msg= &oEntra a nuestro servidor para más contenido"
+        - "msg= &9&ldiscord.gg/jxwyrGp"
 
 
 
