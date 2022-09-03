@@ -71,6 +71,24 @@
 			"chars": [
 				"\u3207"
 			]
+		},
+		{
+			"type": "bitmap",
+			"file": "along:font/maps.png",
+			"ascent": 134,
+			"height": 256,
+			"chars": [
+				"\u3208"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "along:font/propiedades.png",
+			"ascent": 134,
+			"height": 256,
+			"chars": [
+				"\u3209"
+			]
 		}
 	]
 }
