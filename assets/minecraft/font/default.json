@@ -74,7 +74,7 @@
 		},
 		{
 			"type": "bitmap",
-			"file": "along:font/ajustes.png",
+			"file": "along:font/maps.png",
 			"ascent": 134,
 			"height": 256,
 			"chars": [
@@ -83,11 +83,29 @@
 		},
 		{
 			"type": "bitmap",
-			"file": "along:font/fondo.png",
+			"file": "along:font/propiedades.png",
 			"ascent": 134,
 			"height": 256,
 			"chars": [
 				"\u3209"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "along:font/ajustes.png",
+			"ascent": 134,
+			"height": 256,
+			"chars": [
+				"\u320A"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "along:font/fondo.png",
+			"ascent": 134,
+			"height": 256,
+			"chars": [
+				"\u320B"
 			]
 		}
 	]

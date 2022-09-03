@@ -16,10 +16,15 @@ panels:
       '3':
         material: DIAMOND
         stack: 1
-        name: '&c&lDeepWeb'
+        name: '&c&lDeepWeb'  
         lore:
         - '&f¿No quieres que te atrapen?, no hay problema, Con esta App'
         - '&fpuedes comprar armas y drogas de forma totalmente anónima.'
+        player-input:
+        - "send= /deepweb %cp-player-input%"
+        commands:
+        - msg= %cp-tag%&7Has entrado a la &4&lDeepWeb &7
+        - cpc
         customdata: 1
       '5':
         material: DIAMOND
@@ -36,7 +41,12 @@ panels:
         name: '&3&lTwitter'
         lore:
         - '&f¡Ingresa a Twitter!, con esta app'
-        - '&fpuedes mandar mensajes globales dentro del rol.'
+        - '&fpuedes mandar mensajes globales dentro del rol.'        
+        player-input:
+        - "send= /twt %cp-player-input%"
+        commands:
+        - msg= %cp-tag%&7Has entrado a la &b&lTwitter&7
+        - cpc
         customdata: 1
       '14':
         material: DIAMOND
@@ -55,6 +65,8 @@ panels:
         lore:
         - '&f¿No encuentras algún punto del mapa?, ubícate.'
         customdata: 1
+        commands:
+        - open= maps
       '23':
         material: DIAMOND
         stack: 1
@@ -63,6 +75,8 @@ panels:
         - '&f¿Quieres ver tu casa?'
         - '&fCon esta app podrás gestionar tus propiedades'
         customdata: 1
+        commands:
+        - open= propiedades
       '30':
         material: DIAMOND
         stack: 1
@@ -100,6 +114,7 @@ panels:
         commands:
         - "msg= &oEntra a nuestro servidor para más contenido"
         - "msg= &9&ldiscord.gg/jxwyrGp"
+        - cpc
 
 
 
@@ -613,66 +628,70 @@ panels:
         material: DIAMOND
         stack: 1
         customdata: 1
-        name: "&d&lItem"
+        name: "&d&lDrogas"
         lore:
-        - "&7Lorem ipsum dolor sit amet, "
-        - "&7consectetur adipiscing elit."
+        - "&7Puedes obtenerlas &n comprandolas o por medio de cultivos:"
+        - "&7Para cultivar, hazlo sobre tierra, arena o pozdol."
+        - "&7Para comprar, basta con encontrar tiendas que las vendan o contactar a tu distribuidor (dealer) de confianza."
+        - "&7¡El consumo porte y distribución son &4&l ILEGALES dentro del rol!"
       '13':
         material: DIAMOND
         stack: 1
         customdata: 1
-        name: "&c&lItem"
+        name: "&c&lComida"
         lore:
-        - "&7Lorem ipsum dolor sit amet, "
-        - "&7consectetur adipiscing elit."
+        - "&7Comer ayuda a restaurar tu salud."
+        - "&7Para conseguir alimentos puedes acercarte a alguna tienda o chaza en la universidad, o usar el comando /comida en el chat."
       '14':
         material: DIAMOND
         stack: 1
         customdata: 1
-        name: "&a&lItem"
+        name: "&a&lComo ser tombo / médico"
         lore:
-        - "&7Lorem ipsum dolor sit amet, "
-        - "&7consectetur adipiscing elit."
+        - "&7Si quieres ser policía o médico, debes postularte a través del discord del servidor (puedes encontrar la información en la app de redes sociales)."
+        - "&7Si te interesa algún otro trabajo, recuerda que puedes usar la app de trabajos."
       '21':
         material: DIAMOND
         stack: 1
         customdata: 1
-        name: "&7&lItem"
+        name: "&7&lChat de voz"
         lore:
-        - "&7Lorem ipsum dolor sit amet, "
-        - "&7consectetur adipiscing elit."
+        - "&7ESMAD aún no sabe como hacer esto, severa lok."
       '22':
         material: DIAMOND
         stack: 1
         customdata: 1
-        name: "&6&lItem"
+        name: "&6&lComo conseguir armas"
         lore:
-        - "&7Lorem ipsum dolor sit amet, "
-        - "&7consectetur adipiscing elit."
+        - "&7Existen dos maneras para armarte hasta los dientes."
+        - "&7Si quieres mantenerte legal, puedes realizar misiones que te darán armas como recompensas, sin embargo, también puedes obtener armamento mediante tradeos con otros jugadores."
       '23':
         material: DIAMOND
         stack: 1
         customdata: 1
-        name: "&9&lItem"
+        name: "&9&lComo adquirir un trabajo"
         lore:
-        - "&7Lorem ipsum dolor sit amet, "
-        - "&7consectetur adipiscing elit."
+        - "&7Para adquirir un trabajo, usa la app de trabajos en tu celular y selecciona el que deseas desempeñar."
+        - "&7Si ya tienes un trabajo, debes dejarlo antes de seleccionar uno nuevo."
+        - "&7Algunos trabajos requieren postularse a través de discord (info en la app redes sociales), por lo que debes saber que desde la app sólo puedes optar por ser aseador, conductor de transmi, agricultor o minero."
       '30':
         material: DIAMOND
         stack: 1
         customdata: 1
-        name: "&e&lItem"
+        name: "&e&lComo ser builder o programador"
         lore:
-        - "&7Lorem ipsum dolor sit amet, "
-        - "&7consectetur adipiscing elit."
+        - "&7Si deseas ayudar con el mantenimiento y mejora de este servidor, puedes postularte a través del discord del servidor (puedes encontrar la información en la app de redes sociales)."
+        - "&7Si te interesa algún otro trabajo, recuerda que puedes usar la app de trabajos."
       '31':
         material: DIAMOND
         stack: 1
         customdata: 1
-        name: "&5&lItem"
+        name: "&5&lNuestras redes sociales"
         lore:
-        - "&7Lorem ipsum dolor sit amet, "
-        - "&7consectetur adipiscing elit."
+        - "&7¡Conoce las redes de Minecraft UN!"
+        - "&7Discord: discord.gg/jxwyrGp"
+        - "&7Instagram: @minecraft_un"
+        - "&7Facebook: (Facebook es pa boomers)"
       '49':
         material: DIAMOND
         stack: 1
@@ -682,11 +701,173 @@ panels:
         - "&7Ir al menú principal del teléfono "
         commands:
         - "sudo= phone"
+  
+  maps:
+      perm: default
+      rows: 6
+      title: "\u3201\u3201&f\u3208"
+      commands:
+      - maps
+      item:
+        '12':
+          material: DIAMOND
+          stack: 1
+          name: ''
+          customdata: 1
+          name: "&b&lItem"
+          lore:
+          - "&7Lorem ipsum dolor sit amet, "
+          - "&7consectetur adipiscing elit."
+        '13':
+          material: DIAMOND
+          stack: 1
+          name: ''
+          customdata: 1
+          name: "&b&lItem"
+          lore:
+          - "&7Lorem ipsum dolor sit amet, "
+          - "&7consectetur adipiscing elit."
+        '14':
+          material: DIAMOND
+          stack: 1
+          name: ''
+          customdata: 1
+          name: "&b&lItem"
+          lore:
+          - "&7Lorem ipsum dolor sit amet, "
+          - "&7consectetur adipiscing elit."
+        '21':
+          material: DIAMOND
+          stack: 1
+          name: ''
+          customdata: 1
+          name: "&b&lItem"
+          lore:
+          - "&7Lorem ipsum dolor sit amet, "
+          - "&7consectetur adipiscing elit."
+        '22':
+          material: DIAMOND
+          stack: 1
+          name: ''
+          customdata: 1
+          name: "&b&lItem"
+          lore:
+          - "&7Lorem ipsum dolor sit amet, "
+          - "&7consectetur adipiscing elit."
+        '23':
+          material: DIAMOND
+          stack: 1
+          name: ''
+          customdata: 1
+          name: "&b&lItem"
+          lore:
+          - "&7Lorem ipsum dolor sit amet, "
+          - "&7consectetur adipiscing elit."
+        '30':
+          material: DIAMOND
+          stack: 1
+          name: ''
+          customdata: 1
+          name: "&b&lItem"
+          lore:
+          - "&7Lorem ipsum dolor sit amet, "
+          - "&7consectetur adipiscing elit."
+        '31':
+          material: DIAMOND
+          stack: 1
+          name: ''
+          customdata: 1
+          name: "&b&lItem"
+          lore:
+          - "&7Lorem ipsum dolor sit amet, "
+          - "&7consectetur adipiscing elit."
+        '32':
+          material: DIAMOND
+          stack: 1
+          name: ''
+          customdata: 1
+          name: "&b&lItem"
+          lore:
+          - "&7Lorem ipsum dolor sit amet, "
+          - "&7consectetur adipiscing elit."
+        '39':
+          material: DIAMOND
+          stack: 1
+          name: ''
+          customdata: 1
+          name: "&b&lItem"
+          lore:
+          - "&7Lorem ipsum dolor sit amet, "
+          - "&7consectetur adipiscing elit."
+        '40':
+          material: DIAMOND
+          stack: 1
+          name: ''
+          customdata: 1
+          name: "&b&lItem"
+          lore:
+          - "&7Lorem ipsum dolor sit amet, "
+          - "&7consectetur adipiscing elit."
+        '41':
+          material: DIAMOND
+          stack: 1
+          name: ''
+          customdata: 1
+          name: "&b&lItem"
+          lore:
+          - "&7Lorem ipsum dolor sit amet, "
+          - "&7consectetur adipiscing elit."
+        '49':
+          material: DIAMOND
+          stack: 1
+          name: ''
+          customdata: 1
+          name: "&9&lHome"
+          lore:
+          - "&7Ir al menú principal del teléfono "
+          commands:
+          - "sudo= phone"
 
+  propiedades:
+      perm: default
+      rows: 6
+      title: "\u3201\u3201&f\u3209"
+      commands:
+      - propiedades
+      item:
+        '12':
+          material: DIAMOND
+          stack: 1
+          name: ''
+          customdata: 1
+          name: "&2&lItem"
+          lore:
+          - "&7Lorem ipsum dolor sit amet, "
+          - "&7consectetur adipiscing elit."
+        '30':
+          material: DIAMOND
+          stack: 1
+          name: ''
+          customdata: 1
+          name: "&2&lItem"
+          lore:
+          - "&7Lorem ipsum dolor sit amet, "
+          - "&7consectetur adipiscing elit."
+        '49':
+          material: DIAMOND
+          stack: 1
+          name: ''
+          customdata: 1
+          name: "&6&lHome"
+          lore:
+          - "&7Ir al menú principal del teléfono "
+          commands:
+          - "sudo= phone"
+  
   ajustes:
     perm: default
     rows: 6
-    title: "\u3201\u3201&f\u3208"
+    title: "\u3201\u3201&f\u320A"
     pre-load-commands:
       - add-data= status_clock false
       - add-data= status_emerald false
@@ -943,7 +1124,7 @@ panels:
   fondo:
     perm: default
     rows: 6
-    title: "\u3201\u3201&f\u3209"
+    title: "\u3201\u3201&f\u320B"
     item:
       '3':
         material: DIAMOND
