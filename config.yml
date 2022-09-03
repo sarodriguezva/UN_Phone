@@ -20,7 +20,7 @@ config:
   update-notifications: true
   panel-snooper: false
   format:
-    tag: '&6[&bUn-Roleplay(commandpanels)&6] '
+    tag: '&7[&e&lUN-Roleplay&7]'
     perms: '&cNo permission.'
     reload: '&aReloaded.'
     nopanel: '&cPanel not found.'
@@ -31,12 +31,12 @@ config:
     offlineHeadValue: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmU1Mjg2YzQ3MGY2NmZmYTFhMTgzMzFjYmZmYjlhM2MyYTQ0MjRhOGM3MjU5YzQ0MzZmZDJlMzU1ODJhNTIyIn19fQ==
     input: '&cYour Input is too long!'
 input:
-  input-cancel: flayo
-  input-cancelled: '&cSevera lok, se le hizo achi!'
+  input-cancel: esc
+  input-cancelled: '&7Cancelaste tu mensaje con &aexito.'
   max-input-length: -1
   input-message:
-  - '%cp-tag%&aDale a la T y manda tu mensaje pecaminoso :V'
-  - '&cEscribe &4%cp-args% &cpara cancelar el mensaje, miedoso!'
+  - '%cp-tag%&7Oprime &aT &7para enviar tu mensaje.'
+  - '%cp-tag%&cEscribe &4%cp-args% &cpara cancelar tu mensaje.'
 hexcodes:
   start_tag: '#'
   end_tag: ''

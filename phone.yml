@@ -23,8 +23,8 @@ panels:
         player-input:
         - "send= /deepweb %cp-player-input%"
         commands:
+        - msg= %cp-tag%&7Has entrado a la &4&lDeepWeb &7
         - cpc
-        - msg= &c Ya entraste a la DeepWeb, escribele a tu flecho a continuacion
         customdata: 1
       '5':
         material: DIAMOND
@@ -41,7 +41,12 @@ panels:
         name: '&3&lTwitter'
         lore:
         - '&f¡Ingresa a Twitter!, con esta app'
-        - '&fpuedes mandar mensajes globales dentro del rol.'
+        - '&fpuedes mandar mensajes globales dentro del rol.'        
+        player-input:
+        - "send= /twt %cp-player-input%"
+        commands:
+        - msg= %cp-tag%&7Has entrado a la &b&lTwitter&7
+        - cpc
         customdata: 1
       '14':
         material: DIAMOND
