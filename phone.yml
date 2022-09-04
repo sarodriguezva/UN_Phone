@@ -89,9 +89,11 @@ panels:
         stack: 1
         name: '&7&lAjustes'
         lore:
-        - '&fConfigura aspectos del servidor para'
+        - '&fConfigura aspectos del servidor'
         - '&fpara mejorar el rendimiento o tu experiencia'
         customdata: 1
+        commands:
+          - open= ajustes
       '49':
         material: DIAMOND
         stack: 1
@@ -625,36 +627,39 @@ panels:
       '12':
         material: DIAMOND
         stack: 1
-        name: ''
         customdata: 1
         name: "&d&lDrogas"
         lore:
         - "&7Puedes obtenerlas &n comprandolas o por medio de cultivos:"
         - "&7Para cultivar, hazlo sobre tierra, arena o pozdol."
-        - "&7Para comprar, basta con encontrar tiendas que las vendan o contactar a tu distribuidor (dealer) de confianza."
-        - "&7¡El consumo porte y distribución son &4&l ILEGALES dentro del rol!"
+        - "&7Para comprar, basta con encontrar tiendas que las vendan"
+        - "&7o contactar a tu distribuidor(dealer) de confianza."
+        - "&7¡El consumo porte y distribución"
+        - "&7son &4&l ILEGALES &7dentro del rol!"
       '13':
         material: DIAMOND
         stack: 1
-        name: ''
         customdata: 1
         name: "&c&lComida"
         lore:
         - "&7Comer ayuda a restaurar tu salud."
-        - "&7Para conseguir alimentos puedes acercarte a alguna tienda o chaza en la universidad, o usar el comando /comida en el chat."
+        - "&7Para conseguir alimentos puedes acercarte a alguna tienda"
+        - "&7o chaza en la universidad, o usar el comando /comida"
+        - "&7dentro del chat."
       '14':
         material: DIAMOND
         stack: 1
-        name: ''
         customdata: 1
         name: "&a&lComo ser tombo / médico"
         lore:
-        - "&7Si quieres ser policía o médico, debes postularte a través del discord del servidor (puedes encontrar la información en la app de redes sociales)."
-        - "&7Si te interesa algún otro trabajo, recuerda que puedes usar la app de trabajos."
+        - "&7Si quieres ser policía o médico, debes postularte"
+        - "&7a través del discord del servidor"
+        - "&7(Puedes encontrar la info en la app de redes)"
+        - "&7Si te interesa algún otro trabajo"
+        - "&7recuerda que puedes usar la app de trabajos."
       '21':
         material: DIAMOND
         stack: 1
-        name: ''
         customdata: 1
         name: "&7&lChat de voz"
         lore:
@@ -662,35 +667,44 @@ panels:
       '22':
         material: DIAMOND
         stack: 1
-        name: ''
         customdata: 1
         name: "&6&lComo conseguir armas"
         lore:
         - "&7Existen dos maneras para armarte hasta los dientes."
-        - "&7Si quieres mantenerte legal, puedes realizar misiones que te darán armas como recompensas, sin embargo, también puedes obtener armamento mediante tradeos con otros jugadores."
+        - "&7Si quieres mantenerte legal, puedes realizar misiones"
+        - "&7que te darán armas como recompensas, sin embargo," 
+        - "&7también puedes obtener armamento mediante"
+        - "&7tradeos con otros jugadores."
       '23':
         material: DIAMOND
         stack: 1
-        name: ''
         customdata: 1
         name: "&9&lComo adquirir un trabajo"
         lore:
-        - "&7Para adquirir un trabajo, usa la app de trabajos en tu celular y selecciona el que deseas desempeñar."
-        - "&7Si ya tienes un trabajo, debes dejarlo antes de seleccionar uno nuevo."
-        - "&7Algunos trabajos requieren postularse a través de discord (info en la app redes sociales), por lo que debes saber que desde la app sólo puedes optar por ser aseador, conductor de transmi, agricultor o minero."
+        - "&7Para adquirir un trabajo, usa la app de trabajos en tu celular"
+        - "&7y selecciona el que deseas desempeñar."
+        - "&7Si ya tienes un trabajo, debes dejarlo antes "
+        - "&7de seleccionar uno nuevo."
+        - "&7Algunos trabajos requieren postularse a través de discord"
+        - "&7(info en la app redes sociales), por lo"
+        - "&7que debes saber que desde la"
+        - "&7app sólo puedes optar por ser aseador, conductor de transmi"
+        - "&7agricultor o minero."
       '30':
         material: DIAMOND
         stack: 1
-        name: ''
         customdata: 1
         name: "&e&lComo ser builder o programador"
         lore:
-        - "&7Si deseas ayudar con el mantenimiento y mejora de este servidor, puedes postularte a través del discord del servidor (puedes encontrar la información en la app de redes sociales)."
-        - "&7Si te interesa algún otro trabajo, recuerda que puedes usar la app de trabajos."
+        - "&7Si deseas ayudar con el mantenimiento"
+        - "&7y mejora de este servidor, puedes postularte"
+        - "&7a través del discord del servidor" 
+        - "&7(puedes encontrar la información en la app de redes sociales)."
+        - "&7Si te interesa algún otro trabajo,"
+        - "&7recuerda que puedes usar la app de trabajos."
       '31':
         material: DIAMOND
         stack: 1
-        name: ''
         customdata: 1
         name: "&5&lNuestras redes sociales"
         lore:
@@ -701,7 +715,6 @@ panels:
       '49':
         material: DIAMOND
         stack: 1
-        name: ''
         customdata: 1
         name: "&2&lHome"
         lore:
@@ -870,3 +883,259 @@ panels:
           - "&7Ir al menú principal del teléfono "
           commands:
           - "sudo= phone"
+  ajustes:
+    perm: default
+    rows: 6
+    title: "\u3201\u3201&f\u320A"
+    pre-load-commands:
+      - add-data= status_clock false
+      - add-data= status_emerald false
+      - add-data= status_totem false
+      - add-data= status_book false
+    item:
+      '12':
+        material: DIAMOND
+        stack: 1
+        customdata: 1
+        name: '&b&lPantalla'
+        lore:
+          - '&fRevisar aspectos'
+          - '&fdel fondo de pantalla'
+        commands:
+          - open= fondo
+      '13':
+        material: DIAMOND
+        stack: 1
+        customdata: 1
+        name: '&b&lPantalla'
+        lore:
+          - '&fRevisar aspectos'
+          - '&fdel fondo de pantalla'
+        commands:
+          - open= fondo
+      '14':
+        material: DIAMOND
+        stack: 1
+        customdata: 1
+        name: '&b&lPantalla'
+        lore:
+          - '&fRevisar aspectos'
+          - '&fdel fondo de pantalla'
+        commands:
+          - open= fondo
+      '21':
+        material: DIAMOND
+        stack: 1
+        customdata: 1
+        name: '&7&lOpción 1'
+        lore:
+          - '&fLorem Ipsum'
+          - '&fDolor sit amet'
+      '22':
+        material: GRAY_STAINED_GLASS_PANE
+        stack: 1
+        name: '&6&lApagar'
+        commands:
+          - set-data= status_clock false
+          - refresh
+        has0:
+          material: RED_STAINED_GLASS_PANE
+          compare0: '%cp-data-status_clock%'
+          value0: false
+          name: '&6&lApagar'
+          commands:
+            - set-data= status_clock false
+            - refresh
+        has1:
+          material: GRAY_STAINED_GLASS_PANE
+          compare0: '%cp-data-status_clock%'
+          value0: true
+          name: '&6&lApagar'
+          commands:
+            - set-data= status_clock false
+            - refresh
+      '23':
+        material: GRAY_STAINED_GLASS_PANE
+        stack: 1
+        name: '&6&lEncender'
+        commands:
+          - set-data= status_clock true
+          - refresh
+        has0:
+          material: GREEN_STAINED_GLASS_PANE
+          compare0: '%cp-data-status_clock%'
+          value0: true
+          name: '&6&lEncender'
+          commands:
+            - set-data= status_clock true
+            - refresh
+        has1:
+          material: GRAY_STAINED_GLASS_PANE
+          compare0: '%cp-data-status_clock%'
+          value0: false
+          name: '&6&lEncender'
+          commands:
+            - set-data= status_clock true
+            - refresh
+      '30':
+        material: DIAMOND
+        stack: 1
+        customdata: 1
+        name: '&7&lOpción 2'
+        lore:
+          - '&fLorem Ipsum'
+          - '&fDolor sit amet'
+      '31':
+        material: GRAY_STAINED_GLASS_PANE
+        stack: 1
+        name: '&6&lApagar'
+        commands:
+          - set-data= status_emerald false
+          - refresh
+        has0:
+          material: RED_STAINED_GLASS_PANE
+          compare0: '%cp-data-status_emerald%'
+          value0: false
+          name: '&6&lApagar'
+          commands:
+            - set-data= status_emerald false
+            - refresh
+        has1:
+          material: GRAY_STAINED_GLASS_PANE
+          compare0: '%cp-data-status_emerald%'
+          value0: true
+          name: '&6&lApagar'
+          commands:
+            - set-data= status_emerald false
+            - refresh
+      '32':
+        material: GRAY_STAINED_GLASS_PANE
+        stack: 1
+        name: '&6&lEncender'
+        commands:
+          - set-data= status_emerald true
+          - refresh
+        has0:
+          material: GREEN_STAINED_GLASS_PANE
+          compare0: '%cp-data-status_emerald%'
+          value0: true
+          name: '&6&lEncender'
+          commands:
+            - set-data= status_emerald true
+            - refresh
+        has1:
+          material: GRAY_STAINED_GLASS_PANE
+          compare0: '%cp-data-status_emerald%'
+          value0: false
+          name: '&6&lEncender'
+          commands:
+            - set-data= status_emerald true
+            - refresh
+      '39':
+        material: DIAMOND
+        stack: 1
+        customdata: 1
+        name: '&7&lOpción 3'
+        lore:
+          - '&fLorem Ipsum'
+          - '&fDolor sit amet'
+      '40':
+        material: GRAY_STAINED_GLASS_PANE
+        stack: 1
+        name: '&6&lApagar'
+        commands:
+          - set-data= status_totem false
+          - refresh
+        has0:
+          material: RED_STAINED_GLASS_PANE
+          compare0: '%cp-data-status_totem%'
+          value0: false
+          name: '&6&lApagar'
+          commands:
+            - set-data= status_totem false
+            - refresh
+        has1:
+          material: GRAY_STAINED_GLASS_PANE
+          compare0: '%cp-data-status_totem%'
+          value0: true
+          name: '&6&lApagar'
+          commands:
+            - set-data= status_totem false
+            - refresh
+      '41':
+        material: GRAY_STAINED_GLASS_PANE
+        stack: 1
+        name: '&6&lEncender'
+        commands:
+          - set-data= status_totem true
+          - refresh
+        has0:
+          material: GREEN_STAINED_GLASS_PANE
+          compare0: '%cp-data-status_totem%'
+          value0: true
+          name: '&6&lEncender'
+          commands:
+            - set-data= status_totem true
+            - refresh
+        has1:
+          material: GRAY_STAINED_GLASS_PANE
+          compare0: '%cp-data-status_totem%'
+          value0: false
+          name: '&6&lEncender'
+          commands:
+            - set-data= status_totem true
+            - refresh
+      '48':
+        material: DIAMOND
+        stack: 1
+        customdata: 1
+        name: '&7&lOpción 4'
+        lore:
+          - '&fLorem Ipsum'
+          - '&fDolor sit amet'
+      '49':
+        material: GRAY_STAINED_GLASS_PANE
+        stack: 1
+        name: '&6&lApagar'
+        commands:
+          - set-data= status_book false
+          - refresh
+        has0:
+          material: RED_STAINED_GLASS_PANE
+          compare0: '%cp-data-status_book%'
+          value0: false
+          name: '&6&lApagar'
+          commands:
+            - set-data= status_book false
+            - refresh
+        has1:
+          material: GRAY_STAINED_GLASS_PANE
+          compare0: '%cp-data-status_book%'
+          value0: true
+          name: '&6&lApagar'
+          commands:
+            - set-data= status_book false
+            - refresh
+      '50':
+        material: GRAY_STAINED_GLASS_PANE
+        stack: 1
+        name: '&6&lEncender'
+        commands:
+          - set-data= status_book true
+          - refresh
+        has0:
+          material: GREEN_STAINED_GLASS_PANE
+          compare0: '%cp-data-status_book%'
+          value0: true
+          name: '&6&lEncender'
+          commands:
+            - set-data= status_book true
+            - refresh
+        has1:
+          material: GRAY_STAINED_GLASS_PANE
+          compare0: '%cp-data-status_book%'
+          value0: false
+          name: '&6&lEncender'
+          commands:
+            - set-data= status_book true
+            - refresh

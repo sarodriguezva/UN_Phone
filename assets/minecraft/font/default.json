@@ -89,6 +89,24 @@
 			"chars": [
 				"\u3209"
 			]
+		},
+		{
+			"type": "bitmap",
+			"file": "along:font/ajustes.png",
+			"ascent": 134,
+			"height": 256,
+			"chars": [
+				"\u320A"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "along:font/fondo.png",
+			"ascent": 134,
+			"height": 256,
+			"chars": [
+				"\u320B"
+			]
 		}
 	]
 }
