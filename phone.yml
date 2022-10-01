@@ -84,6 +84,15 @@ panels:
         lore:
         - '&fBusca y gestiona tus empleos'
         customdata: 1
+     '32':
+        material: DIAMOND
+        stack: 1
+        name: '&2&lVotaciones'
+        lore:
+        - '&fPostulate o vota por el nuevo rector.'
+        customdata: 1
+        commands:
+        - open= votaciones   
       '48':
         material: DIAMOND
         stack: 1
@@ -1139,3 +1148,49 @@ panels:
           commands:
             - set-data= status_book true
             - refresh
+
+  votaciones:
+    perm: default
+    rows: 6
+    title: "\u3201\u3201&f\u2114"
+    item:
+      '22':
+        material: DIAMOND
+        stack: 1
+        customdata: 1
+        name: "&a&lVotar"
+        lore:
+        - "&fVota por tu candidato a rector."
+        commands:
+         - "open= votaciones2"
+      '31':
+        material: DIAMOND
+        stack: 1
+        customdata: 1
+        name: "&d&lPostularse"
+        lore:
+         - "&fPostulate como aspirante a rector."
+      '40':
+        material: DIAMOND
+        stack: 1
+        customdata: 1
+        name: "&c&lHome"
+        lore:
+        - "&fDevolverse al menu principal."
+        commands:
+        - "sudo= phone"
+
+  votaciones2:
+    perm: default
+    rows: 6
+    title: "\u3201\u3201&f\u2116"
+    item:
+      '40':
+        material: DIAMOND
+        stack: 1
+        customdata: 1
+        name: "&c&lHome"
+        lore:
+        - "&fDevolverse al menu principal."
+        commands:
+        - "sudo= phone"
