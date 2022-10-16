@@ -7,6 +7,74 @@
 		{
 			"predicate":{"custom_model_data":1}, "model":"item/cookie/1"
 			
+		},
+		{
+			"predicate":{"custom_model_data":2}, "model":"item/cookie/2"
+			
+		},
+		{
+			"predicate":{"custom_model_data":3}, "model":"item/cookie/3"
+			
+		},
+		{
+			"predicate":{"custom_model_data":4}, "model":"item/cookie/4"
+			
+		},
+		{
+			"predicate":{"custom_model_data":5}, "model":"item/cookie/5"
+			
+		},
+		{
+			"predicate":{"custom_model_data":6}, "model":"item/cookie/6"
+			
+		},
+		{
+			"predicate":{"custom_model_data":7}, "model":"item/cookie/7"
+			
+		},
+		{
+			"predicate":{"custom_model_data":8}, "model":"item/cookie/8"
+			
+		},
+		{
+			"predicate":{"custom_model_data":9}, "model":"item/cookie/9"
+			
+		},
+		{
+			"predicate":{"custom_model_data":10}, "model":"item/cookie/10"
+			
+		},
+		{
+			"predicate":{"custom_model_data":11}, "model":"item/cookie/11"
+			
+		},
+		{
+			"predicate":{"custom_model_data":12}, "model":"item/cookie/12"
+			
+		},
+		{
+			"predicate":{"custom_model_data":13}, "model":"item/cookie/13"
+			
+		},
+		{
+			"predicate":{"custom_model_data":14}, "model":"item/cookie/14"
+			
+		},
+		{
+			"predicate":{"custom_model_data":15}, "model":"item/cookie/15"
+			
+		},
+		{
+			"predicate":{"custom_model_data":16}, "model":"item/cookie/16"
+			
+		},
+		{
+			"predicate":{"custom_model_data":17}, "model":"item/cookie/17"
+			
+		},
+		{
+			"predicate":{"custom_model_data":18}, "model":"item/cookie/18"
+			
 		}
 	
 	]

@@ -41,11 +41,11 @@ panels:
         name: '&3&lTwitter'
         lore:
         - '&f¡Ingresa a Twitter!, con esta app'
-        - '&fpuedes mandar mensajes globales dentro del rol.'        
+        - '&fpuedes mandar mensajes globales dentro del rol.'       
         player-input:
         - "send= /twt %cp-player-input%"
         commands:
-        - msg= %cp-tag%&7Has entrado a la &b&lTwitter&7
+        - msg= %cp-tag%&7Has entrado a &b&lTwitter&7  
         - cpc
         customdata: 1
       '14':
@@ -84,6 +84,15 @@ panels:
         lore:
         - '&fBusca y gestiona tus empleos'
         customdata: 1
+     '32':
+        material: DIAMOND
+        stack: 1
+        name: '&2&lVotaciones'
+        lore:
+        - '&fPostulate o vota por el nuevo rector.'
+        customdata: 1
+        commands:
+        - open= votaciones   
       '48':
         material: DIAMOND
         stack: 1
@@ -632,8 +641,10 @@ panels:
         lore:
         - "&7Puedes obtenerlas &n comprandolas o por medio de cultivos:"
         - "&7Para cultivar, hazlo sobre tierra, arena o pozdol."
-        - "&7Para comprar, basta con encontrar tiendas que las vendan o contactar a tu distribuidor (dealer) de confianza."
-        - "&7¡El consumo porte y distribución son &4&l ILEGALES dentro del rol!"
+        - "&7Para comprar, basta con encontrar tiendas que las vendan"
+        - "&7o contactar a tu distribuidor(dealer) de confianza."
+        - "&7¡El consumo porte y distribución"
+        - "&7son &4&l ILEGALES &7dentro del rol!"
       '13':
         material: DIAMOND
         stack: 1
@@ -641,15 +652,20 @@ panels:
         name: "&c&lComida"
         lore:
         - "&7Comer ayuda a restaurar tu salud."
-        - "&7Para conseguir alimentos puedes acercarte a alguna tienda o chaza en la universidad, o usar el comando /comida en el chat."
+        - "&7Para conseguir alimentos puedes acercarte a alguna tienda"
+        - "&7o chaza en la universidad, o usar el comando /comida"
+        - "&7dentro del chat."
       '14':
         material: DIAMOND
         stack: 1
         customdata: 1
         name: "&a&lComo ser tombo / médico"
         lore:
-        - "&7Si quieres ser policía o médico, debes postularte a través del discord del servidor (puedes encontrar la información en la app de redes sociales)."
-        - "&7Si te interesa algún otro trabajo, recuerda que puedes usar la app de trabajos."
+        - "&7Si quieres ser policía o médico, debes postularte"
+        - "&7a través del discord del servidor"
+        - "&7(Puedes encontrar la info en la app de redes)"
+        - "&7Si te interesa algún otro trabajo"
+        - "&7recuerda que puedes usar la app de trabajos."
       '21':
         material: DIAMOND
         stack: 1
@@ -664,24 +680,37 @@ panels:
         name: "&6&lComo conseguir armas"
         lore:
         - "&7Existen dos maneras para armarte hasta los dientes."
-        - "&7Si quieres mantenerte legal, puedes realizar misiones que te darán armas como recompensas, sin embargo, también puedes obtener armamento mediante tradeos con otros jugadores."
+        - "&7Si quieres mantenerte legal, puedes realizar misiones"
+        - "&7que te darán armas como recompensas, sin embargo," 
+        - "&7también puedes obtener armamento mediante"
+        - "&7tradeos con otros jugadores."
       '23':
         material: DIAMOND
         stack: 1
         customdata: 1
         name: "&9&lComo adquirir un trabajo"
         lore:
-        - "&7Para adquirir un trabajo, usa la app de trabajos en tu celular y selecciona el que deseas desempeñar."
-        - "&7Si ya tienes un trabajo, debes dejarlo antes de seleccionar uno nuevo."
-        - "&7Algunos trabajos requieren postularse a través de discord (info en la app redes sociales), por lo que debes saber que desde la app sólo puedes optar por ser aseador, conductor de transmi, agricultor o minero."
+        - "&7Para adquirir un trabajo, usa la app de trabajos en tu celular"
+        - "&7y selecciona el que deseas desempeñar."
+        - "&7Si ya tienes un trabajo, debes dejarlo antes "
+        - "&7de seleccionar uno nuevo."
+        - "&7Algunos trabajos requieren postularse a través de discord"
+        - "&7(info en la app redes sociales), por lo"
+        - "&7que debes saber que desde la"
+        - "&7app sólo puedes optar por ser aseador, conductor de transmi"
+        - "&7agricultor o minero."
       '30':
         material: DIAMOND
         stack: 1
         customdata: 1
         name: "&e&lComo ser builder o programador"
         lore:
-        - "&7Si deseas ayudar con el mantenimiento y mejora de este servidor, puedes postularte a través del discord del servidor (puedes encontrar la información en la app de redes sociales)."
-        - "&7Si te interesa algún otro trabajo, recuerda que puedes usar la app de trabajos."
+        - "&7Si deseas ayudar con el mantenimiento"
+        - "&7y mejora de este servidor, puedes postularte"
+        - "&7a través del discord del servidor" 
+        - "&7(puedes encontrar la información en la app de redes sociales)."
+        - "&7Si te interesa algún otro trabajo,"
+        - "&7recuerda que puedes usar la app de trabajos."
       '31':
         material: DIAMOND
         stack: 1
@@ -1134,3 +1163,48 @@ panels:
           - '&fVolver a Ajustes'
         commands:
           - open= ajustes
+  votaciones:
+    perm: default
+    rows: 6
+    title: "\u3201\u3201&f\u2114"
+    item:
+      '22':
+        material: DIAMOND
+        stack: 1
+        customdata: 1
+        name: "&a&lVotar"
+        lore:
+        - "&fVota por tu candidato a rector."
+        commands:
+         - "open= votaciones2"
+      '31':
+        material: DIAMOND
+        stack: 1
+        customdata: 1
+        name: "&d&lPostularse"
+        lore:
+         - "&fPostulate como aspirante a rector."
+      '40':
+        material: DIAMOND
+        stack: 1
+        customdata: 1
+        name: "&c&lHome"
+        lore:
+        - "&fDevolverse al menu principal."
+        commands:
+        - "sudo= phone"
+
+  votaciones2:
+    perm: default
+    rows: 6
+    title: "\u3201\u3201&f\u2116"
+    item:
+      '40':
+        material: DIAMOND
+        stack: 1
+        customdata: 1
+        name: "&c&lHome"
+        lore:
+        - "&fDevolverse al menu principal."
+        commands:
+        - "sudo= phone"

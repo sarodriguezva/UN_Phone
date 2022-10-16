@@ -1,0 +1,14 @@
+{
+	"parent":"item/handheld",
+	"textures":{
+		"layer0":"item/diamond_chestplate"
+	},
+	"overrides":[
+		{
+			"predicate":{"custom_model_data":1}, "model":"item/diamond_chestplate/1"
+			
+		}
+	
+	]
+
+}
